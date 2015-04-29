@@ -5,16 +5,26 @@
 // Predefine the variables below in order to alter and enable specific features.
 $inuit-viewport-namespace:   $inuit-namespace !default;
 
-$inuit-viewport: "{width=device-width}" !default;
+$inuit-viewport: "width=device-width" !default;
+
+
+
+
+
+// string manipulation
+$inuit-viewport: unquote($inuit-viewport);
+$open-brace: unquote("{");
+$close-brace: unquote("}");
+
 
 
 
 
 /**
- * Viewport definition
+ * Viewport descriptor
  */
-@-webkit-viewport#{unquote($inuit-viewport)}
-@-moz-viewport#{unquote($inuit-viewport)}
-@-ms-viewport#{unquote($inuit-viewport)}
-@-o-viewport#{unquote($inuit-viewport)}
-@viewport#{unquote($inuit-viewport)}
+@-webkit-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
+@-moz-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
+@-ms-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
+@-o-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
+@viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
