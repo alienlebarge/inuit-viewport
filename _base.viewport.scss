@@ -33,13 +33,3 @@ $inuit-viewport: (width: device-width) !default;
     #{$property}: $value;
   }
 }
-
-
-/**
- * Viewport descriptor
- */
-//@-webkit-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
-//@-moz-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
-//@-ms-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
-//@-o-viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
-//@viewport #{$open-brace}#{$inuit-viewport}#{$close-brace}
