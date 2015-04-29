@@ -1,0 +1,27 @@
+{
+  "name": "inuit-viewport",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alienlebarge/inuit-viewport",
+  "authors": [
+    "Cédric Aellen <cedric.aellen@alienlebarge.ch>"
+  ],
+  "description": "Viewport rules for inuitcss framework",
+  "main": "_base.viewport.scss",
+  "keywords": [
+    "viewport",
+    "inuitcss",
+    "oocss",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-defaults": "~0.2.3"
+  }
+}
