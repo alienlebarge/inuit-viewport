@@ -2,8 +2,19 @@
     #VIEWPORT
 \*------------------------------------*/
 
-@-webkit-viewport{width:device-width}
-@-moz-viewport{width:device-width}
-@-ms-viewport{width:device-width}
-@-o-viewport{width:device-width}
-@viewport{width:device-width}
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-viewport-namespace:   $inuit-namespace !default;
+
+$inuit-viewport: "{width=device-width}" !default;
+
+
+
+
+/**
+ * Viewport definition
+ */
+@-webkit-viewport#{unquote($inuit-viewport)}
+@-moz-viewport#{unquote($inuit-viewport)}
+@-ms-viewport#{unquote($inuit-viewport)}
+@-o-viewport#{unquote($inuit-viewport)}
+@viewport#{unquote($inuit-viewport)}
